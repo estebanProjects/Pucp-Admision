@@ -73,8 +73,8 @@ a {
     }
 
 .spaceForProblems {
-    width: 365px;
-    height: 365px;
+    min-width: 365px;
+    min-height: 365px;
     background-color: cyan;
     position: relative;
 
@@ -99,8 +99,8 @@ a {
     }
 
     .imgsize {
-        width: 355px;
-        height: 355px;
+        max-width: 395px;
+        min-height: 355px;
 
         border-radius: 2.5px;
     }
