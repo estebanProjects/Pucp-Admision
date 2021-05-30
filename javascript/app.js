@@ -196,7 +196,6 @@ function cargarMinutos(segundos){
     if (segundos == -1 && minutos != 0) {
         setTimeout(()=> {
             minutos-- 
-            console.log("menos un minuto")
         }, 100) 
     }
 
