@@ -216,3 +216,47 @@ a {
 .fa-circle {
     color: white;
 }
+
+/* Responsive todavía no terminado (en proceso) */
+@media(max-width: 580px) {
+    
+    .PrincipalForSpaces {
+        flex-wrap: wrap;
+    }
+
+    .spaceForResolution {
+        min-width: 164.3px;
+        min-height: 164.3px;
+    }   
+
+        .imgResolutionSize {
+            max-width: 157.7px;
+            min-height: 157.7px;
+        }
+
+    .spaceForProblems {
+        min-width: 240px;
+        min-height: 240px;
+    }   
+
+        .spaceForProblems h2 {
+            text-align: center;
+        }
+
+        .spaceForProblems .logo-pucp {
+            width: 114.6px;
+            height: 114.6px;
+        }
+
+        .imgsize {
+            width: 240px;
+            min-height: 240px;
+        }
+
+    .correccion {
+        width: 164.3px;
+        height: 164.3px;
+        text-align: center;
+    }   
+
+}
