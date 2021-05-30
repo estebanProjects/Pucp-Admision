@@ -196,7 +196,7 @@ function cargarMinutos(segundos){
     if (segundos == -1 && minutos != 0) {
         setTimeout(()=> {
             minutos-- 
-        }, 100) 
+        }, 50) 
     }
 
     if(minutos < 10) {
