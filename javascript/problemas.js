@@ -32,7 +32,7 @@ let problema5 = {
 
 let problema6 = {
     imgProblema: "problemas/problema6_alg.jpg",
-    respuesta: "c",
+    respuesta: "d",
     imgResolucion: "resolucion/resolucion6.jpg"
 }
 
