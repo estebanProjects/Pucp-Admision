@@ -29,11 +29,17 @@ let rpta
 
 let lenghtInicial = problemasPucp.length
 
+let cont = 0
+
+let buenas = 0
+let malas = 0
+let blanco = 0
+
 empezar.addEventListener('click', empezarF)
 siguiente.addEventListener('click', siguienteF)
 comprobar.addEventListener('click', comprobarF)
 
-
+// boton empezar
 function empezarF() {
     empezar.style.display = 'none'
     cont_inp_comp.style.display = 'flex'
@@ -42,12 +48,8 @@ function empezarF() {
     siguienteF()
 }
 
-let cont = 0
 
-let buenas = 0
-let malas = 0
-let blanco = 0
-
+// boton siguiente
 function siguienteF() {
     if(problemasPucp.length > 0) {
 
@@ -108,18 +110,18 @@ function siguienteF() {
 }
 
 
-
+// boton comprobar
 function comprobarF() {
     comprobar.style.display = 'none'
     rpta = input.value.toLowerCase().trim()
     console.log(rpta)
 
-    if(problemasPucp[number].respuesta == rpta) {
+    if(problemasPucp[number].respuesta == rpta) { // si la respuesta es correcta
         correccion.innerHTML = "<p class='god' id='god'>¡Correcto!</p>" + "<a class='showResolution' id='showResolution'> Ver solución </a>"
         showResolution1 = document.getElementById('showResolution')
         godOrBad = document.getElementById('god')
         showResolution1.addEventListener('click', mostrarSolucion)
-    } else {
+    } else { // si la respuesta es incorrecta
         correccion.innerHTML ="<p class='bad' id='bad'>¡Incorrecto!<p>" + "<a class='showResolution' id='showResolution'> Ver resolución </a> "
         showResolution1 = document.getElementById('showResolution')
         godOrBad = document.getElementById('bad')
@@ -131,9 +133,9 @@ function comprobarF() {
     clearInterval(idTiempo)
 }
 
+// boton ver solucion
 function mostrarSolucion() {
 
-    
     let imgResolucion = problemasPucp[number].imgResolucion
     spaceResolution.innerHTML = "<img class='imgResolutionSize' src='" + imgResolucion + "'>"
     
@@ -159,6 +161,7 @@ function acumulacionBuenasMalasBlanco() {
 }
 
 
+// tiempo
 function correrTiempo() {
     clearInterval(idTiempo)
     idTiempo = setInterval(cargarSegundo, 1000)
