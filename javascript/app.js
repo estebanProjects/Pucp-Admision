@@ -71,7 +71,7 @@ function siguienteF() {
 
         number = randomNumber(0, problemasPucp.length)
 
-        if(cont < lenghtInicial) {
+        if(cont < lenghtInicial) { // mostrar problema en pantalla
             let imgProblema = problemasPucp[number].imgProblema
             space.innerHTML = "<img class='imgsize' src='" + imgProblema + "'>"  
 
@@ -137,7 +137,7 @@ function comprobarF() {
 function mostrarSolucion() {
 
     let imgResolucion = problemasPucp[number].imgResolucion
-    spaceResolution.innerHTML = "<img class='imgResolutionSize' src='" + imgResolucion + "'>"
+    spaceResolution.innerHTML = "<img class='imgResolutionSize' src='" + imgResolucion + "'>" // mostrar solucion en pantalla
     
     acumulacionBuenasMalasBlanco()
 
