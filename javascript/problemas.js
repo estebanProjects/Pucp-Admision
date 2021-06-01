@@ -135,7 +135,7 @@ let problema22 = {
 
 let problema23 = {
     imgProblema: "problemas/problema23_geo.jpg",
-    respuesta: "c",
+    respuesta: "b",
     imgResolucion: "resolucion/resolucion23.jpg"
 }
 
