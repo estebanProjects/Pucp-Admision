@@ -14,7 +14,6 @@ let number
 
 let minutos = 2
 let segundos = 0
-let once = true
 
 let idTiempo
 
@@ -186,9 +185,7 @@ function cargarSegundo() {
     
         cargarMinutos(segundos)
     } else {
-        if(once == true) {
             segHtml.innerHTML = "00"
-        }
     }
 }
 
