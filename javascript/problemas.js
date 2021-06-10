@@ -152,4 +152,10 @@ let problema25 = {
     imgResolucion: "resolucion/resolucion25.jpg"
 }
 
-let problemasPucp = [problema1, problema2, problema3, problema4, problema5 ,problema6, problema7, problema8, problema9, problema10, problema11, problema12, problema13, problema14, problema15, problema16, problema17, problema18, problema19, problema20, problema21, problema22, problema23, problema24, problema25]
+let problema26 = {
+    imgProblema: "problemas/problema26_trig.jpg",
+    respuesta: "a",
+    imgResolucion: "resolucion/resolucion26.jpg"
+}
+
+let problemasPucp = [problema1, problema2, problema3, problema4, problema5 ,problema6, problema7, problema8, problema9, problema10, problema11, problema12, problema13, problema14, problema15, problema16, problema17, problema18, problema19, problema20, problema21, problema22, problema23, problema24, problema25, problema26]
