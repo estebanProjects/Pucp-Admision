@@ -188,7 +188,6 @@ function cargarSegundo() {
     } else {
         if(once == true) {
             segHtml.innerHTML = "00"
-            once = false
         }
     }
 }
